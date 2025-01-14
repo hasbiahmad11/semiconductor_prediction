@@ -55,4 +55,18 @@ By considering all of these metrics, you can make a well-rounded assessment of y
 
 
 ## File Structure
-
+Dataset Analysis
+1. Temporal Component:
+   - timeunit: Likely indicates time (e.g., daily, weekly, or monthly units).
+2. Economic Indicators:
+   - storageCost, interestRate: Represent costs associated with inventory storage and financing rates, crucial for inventory control.
+3. Component Indices:
+   - Features like compidx0lt2, compidx0lt2l1, compidx0lt2l2, etc., appear to track component metrics with thresholds (e.g., <2, <6, <10, <20, <30).
+   - Suffixes like l1, l2, l4, l8 may represent lagged values (e.g., metrics from previous time steps).
+4. SKU (Stock Keeping Unit) Information:
+   - sku1, sku1l1, sku1l2, etc., are SKU-specific features, potentially related to inventory levels or production.
+5. Demand Segments:
+   - demandseg1, demandseg2, etc., with lags (l1, l2, etc.), likely capture segmented demand data, critical for forecasting and anomaly detection.
+6. Labels or Targets:
+   - LBL: This might be a categorical or numerical label for classification or regression tasks.
+   - MTLp2, MTLp3, etc.: Could represent multi-tiered lead times or multi-level performance metrics.
