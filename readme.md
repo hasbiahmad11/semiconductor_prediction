@@ -39,6 +39,20 @@ This is a Streamlit app for predicting semiconductor supply chain labels using m
 - **XGBoost:** An optimized gradient boosting model for better performance.
 - **LSTM:** A deep learning model for sequential data.
 - **FBProphet:** A forecasting model for time series data, used to predict future values based on historical data.
+### Model Evaluation Metrics
+For evaluating the performance of our regression models, we use the following metrics:
+1. **Mean Squared Error (MSE)**
+   MSE calculates the average squared difference between the predicted and actual values. It gives a sense of how well the model is performing by penalizing larger errors more heavily due to the squaring of the residuals.
+2. **Root Mean Squared Error (RMSE)**
+   RMSE is the square root of the MSE, bringing the metric back to the original units of the target variable. It provides an interpretable measure of error magnitude.
+3. **R-squared (R²)**
+   R² quantifies how well the model explains the variance in the target variable. A higher R² indicates a better fit of the model to the data.
+### Why These Metrics?
+Using **MSE**, **RMSE**, and **R²** together gives you a comprehensive view of your model's accuracy, interpretability, and goodness of fit:
+- **MSE** and **RMSE** focus on **prediction error**, indicating how far off the predictions are from the true values.
+- **R²** provides insight into how well the model explains the **variance** in the data, reflecting the proportion of the target's variability that is accounted for by the model.
+By considering all of these metrics, you can make a well-rounded assessment of your regression model's performance, understanding both its error and its explanatory power.
+
 
 ## File Structure
 
