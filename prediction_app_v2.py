@@ -14,22 +14,22 @@ from prophet import Prophet
 
 
 # Load Models and Scaler
-scaler = joblib.load("scaler.pkl")
-linear_regressor = joblib.load("linear_regressor.pkl")
-random_forest_regressor = joblib.load("random_forest_model.pkl")
-xgboost_regressor = joblib.load("xgb_model.pkl")
+scaler = joblib.load("model/scaler.pkl")
+linear_regressor = joblib.load("model/linear_regressor.pkl")
+random_forest_regressor = joblib.load("model/random_forest_model.pkl")
+xgboost_regressor = joblib.load("model/xgb_model.pkl")
 
 mse = MeanSquaredError()
 
 # Load the model
-lstm_model = load_model("lstm_model.h5", custom_objects={'mse': mse})
+lstm_model = load_model("model/lstm_model.h5", custom_objects={'mse': mse})
 #lstm_model = load_model("lstm_model.h5")
 
 # Load the pre-trained Prophet model
-prophet_model = joblib.load('prophet_model.pkl')  # Load the Prophet model from the file
+prophet_model = joblib.load('model/prophet_model.pkl')  # Load the Prophet model from the file
 
 # Load training data for Prophet
-df_train = pd.read_csv('data_train.csv')
+df_train = pd.read_csv('dataset/data_train.csv')
 df_train_prophet = df_train[['datetime', 'LBL']].copy()
 
 # Input Features
