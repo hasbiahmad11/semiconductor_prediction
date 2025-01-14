@@ -55,7 +55,6 @@ By considering all of these metrics, you can make a well-rounded assessment of y
 
 
 ## File Structure
-Dataset Analysis
 1. Temporal Component:
    - timeunit: Likely indicates time (e.g., daily, weekly, or monthly units).
 2. Economic Indicators:
