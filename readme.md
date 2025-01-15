@@ -48,10 +48,10 @@ For evaluating the performance of our regression models, we use the following me
 3. **R-squared (R²)**
    R² quantifies how well the model explains the variance in the target variable. A higher R² indicates a better fit of the model to the data.
 ### Why These Metrics?
-Using **MSE**, **RMSE**, and **R²** together gives you a comprehensive view of your model's accuracy, interpretability, and goodness of fit:
+Using **MSE**, **RMSE**, and **R²** together gives you a comprehensive view of the model's accuracy, interpretability, and goodness of fit:
 - **MSE** and **RMSE** focus on **prediction error**, indicating how far off the predictions are from the true values.
 - **R²** provides insight into how well the model explains the **variance** in the data, reflecting the proportion of the target's variability that is accounted for by the model.
-By considering all of these metrics, you can make a well-rounded assessment of your regression model's performance, understanding both its error and its explanatory power.
+By considering all of these metrics, a well-rounded assessment of regression model's performance can be achieved, understanding both its error and its explanatory power.
 
 
 ## File Structure
