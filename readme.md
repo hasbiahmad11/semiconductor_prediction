@@ -54,7 +54,7 @@ Using **MSE**, **RMSE**, and **R²** together gives you a comprehensive view of 
 By considering all of these metrics, a well-rounded assessment of regression model's performance can be achieved, understanding both its error and its explanatory power.
 
 
-## File Structure
+## Data Structure
 1. Temporal Component:
    - timeunit: Likely indicates time (e.g., daily, weekly, or monthly units).
 2. Economic Indicators:
