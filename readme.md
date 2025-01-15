@@ -56,7 +56,7 @@ By considering all of these metrics, a well-rounded assessment of regression mod
 
 ## Data Structure
 1. Temporal Component:
-   - timeunit: Likely indicates time (e.g., daily, weekly, or monthly units).
+   - timeunit: Likely indicates time (e.g., daily, weekly, or monthly units). In this project, timeunit refers to the sequence of days within a year. For example, **timeunit = 1** indicates January 1, 2024.
 2. Economic Indicators:
    - storageCost, interestRate: Represent costs associated with inventory storage and financing rates, crucial for inventory control.
 3. Component Indices:
